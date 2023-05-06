@@ -11,10 +11,11 @@ function onLengthValidation() {
     console.log(dataLength);
 
     if (valueLength === dataLength) {
-        textInputEl.classList.add('valid');
+        textInputEl.classList.add('valid')
+        textInputEl.classList.remove('invalid');
         
     } else {
         textInputEl.classList.add('invalid');
-        
+        textInputEl.classList.remove('valid');
     };
 }
